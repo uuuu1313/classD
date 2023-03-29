@@ -3,11 +3,18 @@
         xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
         layout:decorate="~{layouts/admin}">
     <main layout:fragment="content_ad">
-        <div class="sidebar">
-            <div>사이드 메뉴</div>
-        </div>
         <div class="main">
-            <div>주내용</div>
+            <div class="nav">
+                <ul>
+                    <li>관리자</li>
+                    <li>클래스 관리</li>
+                    <li>문의 사항 관리</li>
+                    <li>결제 관리</li>
+                </ul>
+            </div>
+            <div class="content">
+                <p>관리자님 접속하셨습니다.</p>
+            </div>
         </div>
     </main>
 </html>
