@@ -4,7 +4,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-@ControllerAdvice
+@ControllerAdvice("org.koreait")
 public class CommonController {
     /**
      * 공통 에러 발생 시 이동할 페이지 매핑

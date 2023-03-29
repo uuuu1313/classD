@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### 추가 사항 ###
+.mvn
+.idea
+.HELP
+.mvnw
+.mvnw
