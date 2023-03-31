@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="http://thymeleaf.org"
+<html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultra.net.nz/thymeleaf/layout">
 
 <head>
     <title>사용자 페이지</title>
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
-    <link th:each="cssFile : ${addCss}" rel="sttylesheet" type="text/css" th:href="@{/css/{file}.css(file=${cssFile})}">
+    <link th:each="cssFile : ${addCss}" rel="stylesheet" type="text/css" th:href="@{/css/{file}.css(file=${cssFile})}">
     <script th:src="@{/js/common.js}"></script>
     <script th:each="jsFile : ${addScript}" th:src="@{/js/{file}.js(file=${jsFile})}"></script>
 

@@ -91,10 +91,6 @@
 		</dependency>
 
 		<!-- 해시 함수 암호화 관련 의존-->
-		<dependency>
-			<groupId>org.mindrot</groupId>
-			<artifactId>jbcrypt</artifactId>
-		</dependency>
 
 		<!-- 테스트 관련 의존-->
 		<dependency>

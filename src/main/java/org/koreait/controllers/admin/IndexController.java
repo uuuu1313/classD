@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Controller
-@RequestMapping("/admin/")
+@RequestMapping("/admin")
 public class IndexController {
     @GetMapping
     public String index(Model model){
