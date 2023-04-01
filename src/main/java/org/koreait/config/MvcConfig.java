@@ -33,11 +33,10 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(testInterceptor())
-                .addPathPatterns();
+        registry.addInterceptor(commonInterceptor());
     }
     @Bean
-    public CommonInterceptor testInterceptor(){
+    public CommonInterceptor commonInterceptor(){
         return new CommonInterceptor();
     }
 }
