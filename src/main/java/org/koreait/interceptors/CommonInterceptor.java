@@ -4,7 +4,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-public class TestInterceptor implements HandlerInterceptor {
+public class CommonInterceptor implements HandlerInterceptor {
     // preHandle : 컨트롤러 실행 전
 
     @Override

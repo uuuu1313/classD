@@ -38,7 +38,7 @@
 			<artifactId>thymeleaf-layout-dialect</artifactId>
 		</dependency>
 
-		<!-- 스프링 부트 기본 의존 웹/개발툴/lombok/test-->
+		<!-- 스프링 부트 기본 의존 웹/개발툴/lombok-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -54,6 +54,8 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+		<!-- 테스트용 DB 관련 의존-->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -90,7 +92,18 @@
 			<classifier>jakarta</classifier>
 		</dependency>
 
-		<!-- 해시 함수 암호화 관련 의존-->
+		<!-- Security 관련 의존-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<!-- ModelMapper 관련 의존-->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>3.1.1</version>
+		</dependency>
 
 		<!-- 테스트 관련 의존-->
 		<dependency>
@@ -114,7 +127,6 @@
 					</excludes>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>com.mysema.maven</groupId>
 				<artifactId>apt-maven-plugin</artifactId>
@@ -135,7 +147,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 		</plugins>
 	</build>
 
