@@ -1,4 +1,4 @@
-package org.koreait.controllers;
+package org.koreait.controllers.commons;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;

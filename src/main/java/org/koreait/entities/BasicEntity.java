@@ -12,6 +12,10 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
+/*
+    등록일, 수정일 공용 컬럼으로 관리.
+ */
+
 @Getter @Setter @ToString
 @EntityListeners(AuditingEntityListener.class)
 @MappedSuperclass
