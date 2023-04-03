@@ -1,1 +1,27 @@
-*{}
+*{margin:0; padding:0; list-style-type: none; box-sizing: border-box;}
+a{text-decoration: none; color: inherit;}
+html{height:100%;}
+
+/*헤더*/
+header{height:100px; width:100%;}
+header section{display:inline-block;}
+.logo{width:13%; height:100px; text-align:center; line-height:100px; float:left;}
+.top_menu{height:100px; float:right; margin-right:150px;}
+.top_menu p{width:100px; header:100px; display:inline-block;
+    height:100px; text-align:center; line-height:100px; color:#152536; cursor:pointer;}
+.top_menu p:hover{text-decoration:underline;}
+
+/*메인*/
+main{width:100%; height:400px;}
+.nav::before{content:""; display:block; clear:both;}
+.nav{float:left; width:13%}
+.nav ul li{background-color:#a6dae0; height:100px; text-align:center;
+    font-size:20px; line-height:100px; cursor:pointer; color:#152536;}
+.nav ul li:hover{background-color:#00cae2;}
+.content{float:right; width:87%; background-color:#dceef0; height:400px;}
+.content p{height:400px; line-height:400px; text-align:center; font-size:30px; color:#152536;}
+
+/*푸터*/
+footer::before{content:""; display:block; clear:both;}
+footer{height:100px; width:100%; position: absolute; bottom:0; background:#ecf1f2;}
+footer p{text-align:center; line-height:100px;}

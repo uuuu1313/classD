@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HiController {
     @GetMapping
     public void hi(){
-        throw new RuntimeException("예외 발생이다");
+        throw new RuntimeException("예외!!");
+//        return "hi";
     }
 }

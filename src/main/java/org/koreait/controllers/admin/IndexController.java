@@ -9,15 +9,15 @@ import java.util.Arrays;
 import java.util.List;
 
 @Controller
-@RequestMapping("/admin/")
+@RequestMapping("/admin")
 public class IndexController {
     @GetMapping
     public String index(Model model){
-        List<String> addCss = Arrays.asList("test01","test02");
-        List<String> addScript = Arrays.asList("test01","test02");
-
-        model.addAttribute("addCss",addCss);
-        model.addAttribute("addScript",addScript);
+//        List<String> addCss = Arrays.asList("test01","test02");
+//        List<String> addScript = Arrays.asList("test01","test02");
+//
+//        model.addAttribute("addCss",addCss);
+//        model.addAttribute("addScript",addScript);
         return "admin/index";
     }
 }
